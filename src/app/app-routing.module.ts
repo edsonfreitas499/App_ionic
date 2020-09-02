@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'proxima',
+    loadChildren: () => import('./proxima/proxima.module').then( m => m.ProximaPageModule)
+  },
+  {
+    path: 'novo',
+    loadChildren: () => import('./novo/novo.module').then( m => m.NovoPageModule)
+  },
 ];
 
 @NgModule({

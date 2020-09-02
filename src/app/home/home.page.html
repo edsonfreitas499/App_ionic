@@ -1,7 +1,15 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button color="secondary">Ok</ion-button>
+      <ion-button color="secondary">cancelar</ion-button>
+    </ion-buttons>
     <ion-title>
-      Blank
+      Ola Mundo
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,7 +22,10 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <img src=""/>
+    <ion-button routerLink="/proxima">
+  <ion-icon slot="icon-only" name="arrow-redo-outline"> Ir a próxima página</ion-icon></ion-button>
+
+  <ion-button color="secondary" routerLink="/novo">Novo Contato</ion-button>
   </div>
 </ion-content>
